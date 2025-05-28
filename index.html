@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cyberpunk Chat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="login-screen">
+    <h1>⚡ Cyberpunk Chat ⚡</h1>
+    <input id="username" placeholder="Enter your username" />
+    <button onclick="login()">Login</button>
+  </div>
+
+  <div id="chat-screen" class="hidden">
+    <div id="header">
+      <span id="user-label"></span>
+      <button onclick="logout()">Logout</button>
+    </div>
+    <div id="chat-box"></div>
+    <div id="input-area">
+      <input id="message-input" placeholder="Type a message..." />
+      <button onclick="sendMessage()">➤</button>
+      <button onclick="addEmoji()">😊</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
