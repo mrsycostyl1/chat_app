@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: radial-gradient(circle, #0f0c29, #302b63, #24243e);
+  color: #00ffea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.hidden { display: none; }
+
+#login-screen, #chat-screen {
+  width: 90%;
+  max-width: 500px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 2em;
+  border: 2px solid #00ffea;
+  border-radius: 10px;
+}
+
+#chat-box {
+  height: 300px;
+  overflow-y: auto;
+  background: black;
+  margin: 1em 0;
+  padding: 1em;
+  border: 1px solid #00ffea;
+}
+
+#chat-box .msg {
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  background: #222;
+  border-radius: 5px;
+  position: relative;
+}
+
+#chat-box .msg .delete {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+  color: red;
+}
+
+#input-area {
+  display: flex;
+  gap: 0.5em;
+}
+
+input {
+  padding: 0.5em;
+  flex: 1;
+  background: #111;
+  color: #0ff;
+  border: 1px solid #00ffea;
+  border-radius: 5px;
+}
+
+button {
+  padding: 0.5em 1em;
+  background: #00ffea;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
